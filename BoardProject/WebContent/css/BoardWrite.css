@@ -1,0 +1,100 @@
+@charset "UTF-8";
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 65px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    label[for="visibility"] {
+	  display: block;
+	  margin-top: 20px;
+	  font-weight: bold;
+	}
+	
+	select#visibility {
+	  width: 100px;
+	  padding: 5px;
+	  border: 1px solid #ccc;
+	  border-radius: 5px;
+	  margin-bottom: 10px;
+	}
+	
+	/* 공개/비공개 선택 스타일 */
+	select#visibility option {
+	  padding: 5px;
+	  background-color: #fff;
+	}
+	
+	select#visibility option[value="public"] {
+	  background-color: #4CAF50; /* 공개 */
+	  color: #fff;
+	}
+	
+	select#visibility option[value="private"] {
+	  background-color: #F44336; /* 비공개 */
+	  color: #fff;
+	}

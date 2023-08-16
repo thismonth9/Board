@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  cursor: pointer;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.like-dislike-buttons {
+  margin-top: 20px;
+}
+
+.like-button,
+.dislike-button,
+.list-button,
+.update-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  background-color: #45a049;
+}
+
+.like-count,
+.dislike-count {
+  margin-right: 3px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 게시판 컨텐츠 영역 스타일 */
+.content {
+  margin: 20px auto;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f1f1f1;
+}
+    /* 스타일을 추가해서 글과 댓글 섹션을 이쁘게 디자인해주세요. */
+    .post {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .post-title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .post-number {
+      color: #888;
+    }
+    .post-content {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    .comments {
+      margin-top: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    .comment {
+      margin-bottom: 10px;
+    }
+    .comment-content {
+      margin-left: 20px;
+    }
+    .reply-form {
+      margin-left: 40px;
+    }
+
+    /* 스타일 추가: textarea와 input 요소 디자인 */
+    textarea,
+    input[type="text"] {
+      border: none;
+      border-radius: 4px;
+      padding: 8px;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      outline: none;
+      transition: box-shadow 0.2s ease-in-out;
+      height: 65px;
+   	  width: 1862px;
+    }
+
+    textarea:focus,
+    input[type="text"]:focus {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type="submit"] {
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      cursor: pointer;
+      outline: none;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+    .comment-box {
+	  width: 100%;
+	  padding: 20px;
+      padding-left: 0px;
+	}
+	
+	.comment {
+	  margin-bottom: 15px;
+	  padding: 10px;
+	  border: 1px solid #eee;
+	  background-color: #f9f9f9;
+	}
+	
+	.comment p {
+	  margin: 0;
+	}
+	
+	.comment strong {
+	  color: #333;
+	}
+	
+	.comment-date {
+	  font-size: 12px;
+	  color: #666;
+	}
+	.image {
+		width: 1000px;
+	}
